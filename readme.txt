@@ -6,6 +6,6 @@
 p.s. Лучше перед этим удалить все существующие таблицы
 
 Чтобы подключить свою базу данных:
-1)Зайти в файл: ...\test.zip\test\vendor\connect.php 
+1)Зайти в файл: ...\Mayorov-main.zip\Mayorov-main\test\vendor\connect.php 
 2)Изменить строчку:
 $connect = new PDO("mysql:host=localhost;dbname=название_базы_данных","логин","пароль");
