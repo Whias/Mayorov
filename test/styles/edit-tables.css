@@ -1,0 +1,62 @@
+tr {
+    height: 3vh;
+    font-size: 2vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  tr input{
+    height: 3vh;
+    font-size: 2vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+table {
+    table-layout: fixed;
+    margin: 1px auto;
+    text-align: center;
+    padding: 0 1vh;
+    width: 50%;
+    border-spacing: 0 10px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    border-collapse: collapse;
+}
+th {
+    padding: 10px 20px;
+    background: #666;
+    color: #fff;
+    border-right: 2px solid;
+    font-size: 0.9em;
+}
+td {
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
+    background: #eee;
+  }
+  .add_obj{
+    border-radius: 30px;
+    margin: auto auto;
+    height: 4vh;
+    width: 25%;
+    cursor: pointer;
+    font-size: 3.3vh;
+    padding: 2px;
+    background: #999;
+    border: #333 2px solid;
+    color: #eee;
+    display: block;
+  }
+  .back{
+        text-decoration: none;
+        font-size: 5vh;
+        color: #333;
+  }
+  .back:hover{
+    cursor: pointer;
+    color: #999;
+  }
+  input{
+    width: 100%;
+  }

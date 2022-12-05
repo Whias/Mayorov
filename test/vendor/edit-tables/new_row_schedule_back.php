@@ -1,0 +1,23 @@
+<?php
+require_once "../connect.php";
+include_once "../functions.php";
+$select_bell = $_POST['select_bell'];
+$select_classroom  = $_POST['select_classroom'];
+$select_group = $_POST['select_group'];
+$select_subject = $_POST['select_subject'];
+$select_teacher = $_POST['select_teacher'];
+$select_day = $_POST['select_day'];
+$rows = $connect->query("SELECT * FROM `schedule` WHERE `day_id` = '$select_day'");
+$new_priority = MaxPriority($rows);
+$sql = "INSERT INTO `schedule` (`bell_id`, `subject_id`, `teacher_id`, `day_id`, `classroom_id`, `group_id`, `priority`) VALUES (:select_bell, :select_subject, :select_teacher, :select_day, :select_classroom,:select_group, :new_priority)";
+$statement = $connect->prepare($sql);
+$statement->bindValue(":select_bell", $select_bell);
+$statement->bindValue(":select_subject", $select_subject);
+$statement->bindValue(":select_teacher", $select_teacher);
+$statement->bindValue(":select_day", $select_day);
+$statement->bindValue(":select_classroom", $select_classroom);
+$statement->bindValue(":select_group", $select_group);
+$statement->bindValue(":new_priority", $new_priority);
+$statement->execute();
+// header("location: ../edit.php");
+echo '<script>location.replace("../edit.php");</script>';

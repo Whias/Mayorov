@@ -1,0 +1,135 @@
+tr {
+  height: 3vh;
+  font-size: 2vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table {
+  table-layout: fixed;
+  margin: 1px auto;
+  text-align: center;
+  padding: 0 1vh;
+  width: 100%;
+  border-spacing: 0 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  border-collapse: collapse;
+}
+th {
+  padding: 10px 20px;
+  background: #666;
+  color: #fff;
+  border-right: 2px solid;
+  font-size: 0.9em;
+}
+th:last-child {
+  border-right: none;
+}
+td {
+  vertical-align: middle;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  border-top: 2px solid #999;
+  border-bottom: 2px solid #999;
+  background: #eee;
+}
+td:first-child {
+  border-left: 2px solid #999;
+  border-right: none;
+}
+td:last-child{
+  border-right: 2px solid #999;
+}
+.day_th th{
+  font-size: 3vh;
+}
+
+.main_table{
+  margin-bottom: 5px;
+}
+.edit-div{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.edit-div input{
+  height: 6vh;
+  width: 100%;
+  font-size: 3vh;
+  cursor: pointer;
+  border: #333 2px solid;
+  background: #666;
+  color: #eee;
+}
+tr td select{
+  font-size: 2vh;
+  height: 3vh;
+  width: 100%;
+  background: #eee;
+  border: 0;
+  border-bottom: 2px solid #333;
+}
+select{
+  border:none;
+  outline:none;
+  text-align: center;
+}
+.delete_cell input{
+  margin: 0;
+  width: 100%;
+  height: 3vh;
+  font-size: 2vh;
+}
+.add_obj{
+  border-radius: 30px;
+  margin: auto auto;
+  height: 5vh;
+  width: 50%;
+  cursor: pointer;
+  font-size: 3.3vh;
+  padding: 2px;
+  background: #999;
+  border: #333 2px solid;
+  color: #eee;
+}
+.main-table{
+  width: 75%;
+  position:relative;
+  left: 0;
+  margin-bottom: 50px;
+  margin-left: 25%;
+}
+.day_th{
+  width: 75%;
+  margin-left: 25%;
+}
+.main-table td a{
+  text-decoration: none;
+  font-size: 5vh;
+  color: #333;
+}
+.main-table td a:hover{
+  cursor: pointer;
+  color: #999;
+}
+.Update_row{
+  margin: 0;
+  width: 100%;
+  height: 3vh;
+  font-size: 2vh;
+}
+.edit_tables{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20%;
+}
+.edit_tables tr td a{
+  text-decoration: none;
+  font-size: 3vh;
+  color: #333;
+}
+.edit_tables tr td a:hover{
+  cursor: pointer;
+  color: #999;
+}
